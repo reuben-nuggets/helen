@@ -1,0 +1,169 @@
+ <!DOCTYPE html>
+<html lang="en" data-theme="garden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="myfootprint, My Footprint, My Footprint App, Mobile App, Carbon Footprint App, App to calculate carbon footprint, Farming Carbon Footprint App, Carbon Footprint Agriculture, Agriculature, My Foootprint Agriculture">
+    <meta name="description" content="An app about calculating your carbon footprint for farmers">
+    <title>My Footprint</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing:{
+              'carousel' : '60vh',
+            },
+            objectPosition:{
+              'samAndIvy':'50% 25%',
+            },
+          }
+        }
+      }
+    </script>
+        <script type="application/ld+json">
+          {
+            "@context": "https://myfootprint.net.au", 
+            "@type": "App Website",
+            "headline": "An app about calculating your carbon footprint for farmers",
+            "description": "An app about calculating your carbon footprint for farmers",
+            "url": "https://myfootprint.net.au",
+          }
+          </script>
+  
+</head>
+<body class="bg-white">
+  <div class="navbar bg-green-600 h-28">
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl h-24" href="index.html"> <img src="LOGO-removebg-preview.png" class="max-h-24"> </a>
+    </div>
+    <div class="flex-none">
+        <div class="dropdown dropdown-end lg:hidden">
+            <label tabindex="0" class="btn btn-ghost text-base-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="overview.html">Overview</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <ul class="menu menu-horizontal px-1 hidden lg:flex text-white">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+        </ul>
+    </div>
+</div>
+
+
+    <section class="splide" aria-label="Splide Basic HTML Example" data-splide='{"type":"loop"}'>
+        <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide h-carousel"><img src="Rifle Site cattle.jpg" class="object-none h-full w-full object-left-center"></li>
+                <li class="splide__slide h-carousel"><img src="https://coreteka.com/wp-content/uploads/2021/10/%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-%D0%B1%D0%B5%D0%B7-%D0%BD%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-14.png" class="w-full h-full object-cover"></li>
+                  <li class="splide__slide h-carousel"><img src="https://blog.nationalbulkbag.com/hubfs/fertilizer%20shortage.jpg" class="w-full h-full object-cover"></li>
+                  <li class="splide__slide h-carousel"><img src="https://www.southwestcalendar.com.au/portals/7/img/3.jpg" class="w-full h-full object-cover"></li>
+
+              </ul>
+        </div>
+      </section>
+
+        <div class="w-full bg-green-500 h-16 flex items-center justify-center">
+          <h1 class="text-center text-middle font-semibold text-xl">Search for <b>MyFootprint: Carbon Assessment</b> on the App Store</h1>
+        </div>
+
+    <div class="hero pt-32 pb-32 grid place-items-center">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img src="https://lh4.googleusercontent.com/hKs0JgqREOJqhIJ8PPEVY1XsuoILKeUYMdtDRlDQP1uUogYHoXa-6zLXqfIyedqBnvXdIMIcyTlOb2DFO26ju775JVSKHGP7MLXW71PrxaDwdGDp74896G0ZshpxNNo7m_N6VSHJ3ALdu3XT1o0lYhKo0CXbcu1jK4_wkeCazXUiUln5a6bcSjPebJcHDDJdLViDFzLr4Q" class="max-w-xs rounded-lg shadow-2xl lg:max-w-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">MyFootprint</h1>
+            <p class="py-6" id="article">MyFootprint is a greenhouse gas calculator for pastoral farmers, 
+            calculating the emissions from your livestock, fuel and electricity usage, plus chemical and fertilizer application, minus the sequestration from any vegetation you have planted.
+            </p>
+            <a href="overview.html"><button class="btn bg-green-600 border-none">Learn More</button></a>
+            <a class="normal-case text-xl h-16 w-16 mt-10" href="https://apps.apple.com/au/app/myfootprint-carbon-assessment/id1671686053"> <img src="https://developer.apple.com/news/images/download-on-the-app-store-badge.png" class="max-h-16 w-52 mt-3"> </a>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="card lg:card-side shadow-xl">
+        <img src="Dawsonvale.jpg" alt="Cows" class="max-w-md"/>
+        <div class="card-body">
+          <h2 class="card-title text-5xl mb-3">Latest Industry News</h2>
+          <div class="flex flex-row" id="list-container">
+          </div>
+          
+        </div>
+    </div>
+
+    <footer class="footer footer-center p-10 bg-green-600 text-white">
+        <div>
+            <img class="inline-block fill-current w-28" src="LOGO-removebg-preview.png">
+            <p class="font-bold">
+            MyFootprint <br/>Providing reliable carbon footprint news since 2023
+          </p> 
+          <p>Copyright © 2023 - All right reserved</p>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-4">
+            <a class="btn btn-ghost btn-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+            <a class="btn btn-ghost btn-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+            <a class="btn btn-ghost btn-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+            <a class="btn btn-ghost btn-circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/> </svg></a>
+        </div>
+        </div>
+      </footer>
+
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+
+          setInterval(buttonClick, 3000);
+        } );
+
+        function buttonClick(){
+          document.getElementsByClassName("splide__arrow splide__arrow--next")[0].click();
+        }
+
+        (async() => {
+          const res = await axios.get("https://raw.githubusercontent.com/currsam/ArticleText/main/articletext.txt");
+          let text = res.data.toString();
+          let textArray = text.split(",");
+          const ul = document.createElement("ul");
+          const ul1 = document.createElement("ul");
+          ul1.className = "pl-5"
+          let listContainer = document.getElementById("list-container");
+          listContainer.appendChild(ul);
+          listContainer.appendChild(ul1);
+          for(let i = 0; i < textArray.length; i++){
+            let brokenArray = textArray[i].split("|");
+            const li = document.createElement("li");
+            const li1 = document.createElement("li");
+            li.innerText = brokenArray[0];
+            li.className = "text-xl"
+            const a = document.createElement("a");
+            a.innerText = brokenArray[1];
+            a.href = brokenArray[2];
+            a.className = "underline text-blue-700 text-xl"
+            li.appendChild(a);
+            ul.appendChild(li);
+          }
+
+        })()
+
+        window.onLoad = load();
+    </script>
+</body>
+</html>
